@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+body {
+    background-color: #e0dede;
+}
+
+.cell {
+    cursor: pointer;
+}
+
+#cell1,
+#cell4,
+#cell7,
+#cell2,
+#cell5,
+#cell8 {
+    border-right: white solid 18px;
+    border-radius: 1rem;
+}
+
+td {
+    width: 10rem;
+    height: 10rem;
+}
+
+#cell1,
+#cell2,
+#cell3,
+#cell4,
+#cell5,
+#cell6 {
+    border-bottom: white solid 18px;
+    border-radius: 1rem;
+}
+
+td {
+    font-size: 100px;
+    font-family: "Fredoka One", cursive;
+}
+
+.container_table {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    display: flex;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+}
+
+.title {
+    margin: 3rem auto 3rem auto;
+    font-family: "Fredoka One", cursive;
+    font-size: 60px;
+    color: dodgerblue;
+}
+
+.container_turn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-family: "Fredoka One", cursive;
+}
+
+.turn_player {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 1rem;
+    font-size: 30px;
+    font-family: "Fredoka One", cursive;
+}
+
+.turn {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: 1rem;
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+
+.container_score {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-family: "Fredoka One", cursive;
+    font-size: 25px;
+}
+
+#score_playerX,
+#score_ties,
+#score_playerO,
+#name_playerX,
+#text_ties,
+#name_playerO {
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+}
+
+#score_playerX{
+    color:dodgerblue;
+}
+
+#score_playerO {
+    color: rgb(255, 102, 0);
+}
+
+.who_playX {
+    border: solid 10px dodgerblue;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.who_playO {
+    border: solid 10px rgb(255, 102, 0);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.message {
+    background-color: rgb(0, 0, 0);
+    opacity: 80%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fredoka One", cursive;
+}
+
+.playAgain {
+    display: none;
+    position: absolute;
+    left: 47%;
+    top: 60%;
+}
+
+button {
+    background-color: white;
+    border: none;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 1rem;
+    font-family: "Fredoka One", cursive;
+    color: dodgerblue;
+}
+
+@media screen and (max-width: 1460px) {
+    td {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .container_table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .turn_player {
+        font-size: 20px;
+    }
+
+    .container_turn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    td {
+        font-size: 50px;
+    }
+
+    .container_score {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        font-size: 20px;
+    }
+
+    .message {
+        font-size: 50px;
+    }
+    .playAgain {
+        display: none;
+        position: absolute;
+        left: 35%;
+        top: 60%;
+    }
+}
